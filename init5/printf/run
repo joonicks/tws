@@ -1,7 +1,0 @@
-#!/bin/sh
-
-gcc -o c c.c printf.S
-
-if [ -x ./c ]; then
-   ./c
-fi
