@@ -1,0 +1,8 @@
+#!/bin/sh
+
+rm -f printf.o
+gcc -c printf.S
+
+if [ -r ./printf.o ]; then
+  objdump -h ./printf.o
+fi

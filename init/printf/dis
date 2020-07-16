@@ -1,0 +1,7 @@
+#!/bin/sh
+
+gcc -o c c.c printf.S
+
+if [ -x ./c ]; then
+  objdump -d c | less -S
+fi

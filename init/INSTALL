@@ -1,0 +1,18 @@
+
+To make the `production' binary;
+
+	make strip
+
+The binary should be compatible with any Linux 2.x, ix86 system.
+
+Make sure you have some alternate way of booting before installing
+twsinit as your default.
+
+DO NOT MIX SYSVINIT TOOLS AND TWSINIT TOOLS!
+
+Running the `shutdown' program from sysvinit tools will
+most likely cause your box to lock up.
+
+Running `reboot -f' seems to be safe, but using other arguments
+are NOT!
+
