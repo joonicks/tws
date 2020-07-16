@@ -6,7 +6,7 @@ PACKAGE =	twsinit-$(VER).tar.gz
 CFLAGS =	-g -Wshadow -Wall -m386 -O2 -fomit-frame-pointer
 #CFLAGS =	-g -Wshadow -Wall -m386 -mcpu=i386 -march=i386 -O2 -fomit-frame-pointer
 LFLAGS =	-g -nostdlib
-CC =		gcc1
+CC =		gcc
 
 EXTRA =
 

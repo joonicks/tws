@@ -3,8 +3,6 @@ Read INSTALL for notes on installing twsinit.
 
 Currently these files are recognized;
 
-
-
 ==> /etc/init/auto
 
 This is the default command to run to get the system up and
@@ -14,8 +12,6 @@ you need to write a wrapper that calls them both in order.
 
 Ex:
 	echo '/etc/init/rc.Sysup rc.Sysup' > /etc/init/auto
-
-
 
 ==> /etc/init/spawn
 
@@ -32,8 +28,6 @@ Ex:
 	echo '/sbin/agetty /sbin/agetty 38400 tty1 linux' > /etc/init/tty1
 	echo '/sbin/agetty /sbin/agetty 38400 tty2 linux' > /etc/init/tty2
 
-
-
 ==> /etc/init/term
 
 Contains the command to run when twsinit receives SIGTERM.
@@ -47,8 +41,6 @@ shutting down or rebooting the system.
 Ex:
 	echo '/etc/init/rc.Shutdown rc.Shutdown' > /etc/init/term
 
-
-
 ==> /etc/init/hostname
 
 twsinit will call sethostname(2) with the content of this file
@@ -57,8 +49,6 @@ twsinit will call sethostname(2) with the content of this file
 Ex:
 	echo 'darkstar' > /etc/init/hostname
 
-
-
 ==> /etc/init/domainname
 twsinit will call setdomainname(2) with the content of this file
 (if it exists).
@@ -66,12 +56,10 @@ twsinit will call setdomainname(2) with the content of this file
 Ex:
 	echo 'frop.org' > /etc/init/domainname
 
-
-
-
 And thats all you can configure for now.
 
 If you have any questions, you may contact me by email at;
 
-	proton@energymech.net
+	god@joonicks.eu
+
 
